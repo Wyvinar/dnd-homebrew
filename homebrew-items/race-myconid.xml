@@ -1,0 +1,131 @@
+<?xm version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Myconid</name>
+    </info>
+
+    <!-- Base Myconid Race -->
+    <element name="Myconid" type="Race" source="GMBinder" id="ID_RACE_MYCONID">
+        <description>
+            <p class="flavour">Also called "mushroom men" or "fungus ones", myconids are intelligent, ambulatory fungi that live in the Underdark and the deepest, darkest depths of forests, seeking enlightenment and deploring violence. If approached peacefully, myconids gladly provide shelter or allow safe passage through their colonies. Violence taints their melds, so the myconids enter battle only in defense or as a last resort, viewing violence as part of the abhorrent nature of fleshy outsiders. </p>
+            <p>Instead, the moving plants prefer a peaceable lifestyle, finding joy in pastoral commonality and shared happiness. Living in circles of roughly twenty myconids or settlements of larger groups, myconids cultivate nonsentient mushrooms and myconid sprouts in gardens. The precise 8-hour divisions of leisure, work, and melding creates a satisfying, if regimented, existence for these creatures, which regard such a lifestyle as completely ideal. </p>
+            <h4>CIRCLES AND MELDS</h4>
+            <p>The largest myconid in a colony is its sovereign, which presides over one or more social groups called circles, which live in quiet groves bereft of speech but exploding with the color of the diverse plants, fungi, and compost within. A circle of myconids that work, live, and meld together with the sovereign, which settles disputes and makes decisions to benefit the entire group. </p>
+            <p>A meld is a form of communal meditation that allows myconids to transcend their damp, pastoral existence. The myconids' rapport spores bind the participants into a group consciousness. Hallucination spores then induce a shared dream that provides comfort and social interaction. Myconids consider melding to be an enlightening act and the purpose of their existence. They use it in the pursuit of higher consciousness, collective union, and spiritual apotheosis. Myconids also use their rapport spores to communicate telepathically with "softies" who come seeking shelter or conflict.</p>
+            <h4>FLIGHT FROM THE SUN</h4>
+            <p>Myconids cannot survive in the sun. Direct light sickens them severely, and an hour of exposure kills them outright. Even the most durable of the adventuring myconids are not immune to the power of the sun. Wandering on the surface is a constant risk for most myconids, who instead flock to the Underdark or shelters of moist darkness in the oldest of forests where canopies of trees create a perpetual twilight. There they find shelter in damp marshes and springs, surrounded by moss and lesser mushrooms which they cultivate for food and grow for use as building materials.</p>
+            <h4>MYCONID ADVENTURERS</h4>
+            <p>It is rare that a myconid voluntarily leaves their circles for long. Their love of community melding and the risk of the sun restricts nearly all myconids to their subterranean or arboreal homes. What few myconids dare venture out into the world have distinct reasons for leaving their comfortable, insular homes and traveling out into the wider world.</p>
+            <table>
+                <thead>
+                    <tr><td>1d6</td><td>Reason for becoming an adventurer</td></tr>
+                </thead>
+                <tr><td>1</td><td>The regimented structure of myconid life seemed oppressive to you, so you left seeking adventure.</td></tr>
+                <tr><td>2</td><td>You left your circle as part of a scouting party; when you returned the circle had been destroyed, leaving you homeless.</td></tr>
+                <tr><td>3</td><td>As one of the oldest myconids in your circle, you were sent to gather experience and knowledge of the outside world to prepare you to lead the circle as a sovereign.</td></tr>
+                <tr><td>4</td><td>Your circle became too large. You are looking for the perfect place to spread your reproduction spores and found a new circle.</td></tr>
+                <tr><td>5</td><td>You slew a fellow myconid. Whatever your reason, such an act cannot be allowed to taint the meld, so you were banished.</td></tr>
+                <tr><td>6</td><td>You met an outsider taking shelter in your circle's grove who regaled you with tales of the outside world, so you left to see what the world offers.</td></tr>
+            </table>
+            <h4>MYCONID NAMES</h4>
+            <p>Myconid names sound nonsensical to outside ears, but are in fact derived from "softy" vocabulary. Myconids rarely use names within their circles, preferring rapport spores and the connections of melding to refer to each other in concept rather than word. They often take names from sounds that each myconid finds pleasing to the ear, borrowing from the world around them or from a wandering traveler offered hospitality in their groves. Others adopt mushroom-related vocabulary that they find pleasant.</p>
+            <p class="indent"><strong><em>Myconid Names:</em></strong> Basidia, Breberil, Brelup, Gasbide, Hebopbe, Loobamub, Phylo, Posbara, Rasharoo, Rumpadump, Stool, Yestabrod.</p>
+            <h4>MYCONID TRAITS</h4>
+            <p>Myconids possess a diverse variety of physical features, but they all share a few core traits.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Myconids grow quickly, reaching maturity by the age of four and living just under a quarter of a century. A myconid sovereign lives far longer, and their lifespan is unknown.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Myconids vary incredibly in size, which is determined by their age and circle.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 20 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> Raised in the dimmest forests and the depths of the Underdark, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Fungal Form.</em></strong> You have advantage on saving throws against poison, and resistance to poison damage.</p>
+            <p class="indent"><strong><em>Hybrid Nature.</em></strong> You have two creature types: humanoid and plant. You can be affected by a game effect if it works on either of your creature types.</p>
+            <p class="indent"><strong><em>Rapport Spores.</em></strong> Myconids cannot speak, but you can communicate telepathically with all creatures within 30 ft. of you, provided you and the creature share a language.</p>
+            <p class="indent">You are not, however, nonverbal; myconids still hum, whistle, and grumble, which forms the verbal components for your spells if you cast them. If you are silenced by an effect, you can still communicate telepathically with your spores, but you cannot use spells with a Verbal component.</p>
+            <p class="indent"><strong><em>Sunlight Sensitivity</em></strong> Though exposure to sunlight will not kill you like most myconids, you have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+            <p class="indent"><strong><em>Pheremone Spores.</em></strong> Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</p>
+            <p class="indent"><strong><em>Language.</em></strong>You can read, understand, and write Common. You cannot speak it.</p>
+            <p class="indent"><strong><em>Subrace.</em></strong>Choose one of the Melds, which determine your physique and role in your society. You gain additional features and traits based on which you choose.</p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="names" type="custom">Basidia, Breberil, Brelup, Gasbide, Hebopbe, Loobamub, Phylo, Posbara, Rasharoo, Rumpadump, Stool, Yestabrod</set>
+            <set name="names-format">{{custom}}</set>
+        </setters>
+        <rules>
+            <stat name="constitution" value="2"/>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="innate speed" value="20" bonus="base"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_FUNGAL_FORM"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_HYBRID_NATURE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_RAPPORT_SPORES"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_PHEREMONE_SPORES"/>
+            <grant type="Racial Trait" id="ID_FUNGALBREWS_GMBINDER_RACIAL_TRAIT_MYCONID_SUBRACE"/>
+        </rules>
+    </element>
+    <element name="Myconid Subrace" type="Racial Trait" source="GMBinder" id="ID_FUNGALBREWS_GMBINDER_RACIAL_TRAIT_MYCONID_SUBRACE">
+        <description>
+            <p>Choose one of the Melds below, which determine your physique and role in your society: Growth, Spore Master, Animation, Compost</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Sub Race" name="Myconid Subrace" supports="Myconid"/>
+        </rules>
+    </element>
+    <!-- Base Racial Traits -->
+    <element name="Fungal Form" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_FUNGAL_FORM">
+        <description>
+            <p>You have advantage on saving throws against poison, and resistance to poison damage.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against poison, and resistance to poison damage.</description>
+        </sheet>
+        <rules>
+            <grant type="condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"/>
+        </rules>
+    </element>
+    <element name="Hybrid Nature" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_HYBRID_NATURE">
+        <description>
+            <p>You have two creature types: humanoid and plant. You can be affected by a game effect if it works on either of your creature types.</p>
+        </description>
+        <sheet>
+            <description>You have two creature types: humanoid and plant. You can be affected by a game effect if it works on either of your creature types.</description>
+        </sheet>
+    </element>
+    <element name="Rapport Spores" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_RAPPORT_SPORES">
+        <description>
+            <p>Myconids cannot speak, but you can communicate telepathically with all creatures within 30 ft. of you, provided you and the creature share a language.
+
+                You are not, however, nonverbal; myconids still hum, whistle, and grumble, which forms the verbal components for your spells if you cast them. If you are silenced by an effect, you can still communicate telepathically with your spores, but you cannot use spells with a Verbal component.</p>
+        </description>
+        <sheet>
+            <description>Myconids cannot speak, but you can communicate telepathically with all creatures within 30 ft. of you, provided you and the creature share a language.
+
+                You are not, however, nonverbal; myconids still hum, whistle, and grumble, which forms the verbal components for your spells if you cast them. If you are silenced by an effect, you can still communicate telepathically with your spores, but you cannot use spells with a Verbal component.</description>
+        </sheet>
+    </element>
+    <element name="Sunlight Sensitivity" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY">
+        <description>
+            <p>Though exposure to sunlight will not kill you like most myconids, you have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+        </description>
+        <sheet>
+            <description>Though exposure to sunlight will not kill you like most myconids, you have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+        </sheet>
+    </element>
+    <element name="Pheremone Spores" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_PHEREMONE_SPORES">
+        <description>
+            <p>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</description>
+        </sheet>
+    </element>
+
+
+    <!-- Growth Subrace -->
+    <element name="Growth" type="Sub Race" source="GMBinder" id="ID_FUNGALBREWS_GMBINDER_SUBRACE_MYCONID_GROWTH">
+        
+    </element>
+    
+</elements>
