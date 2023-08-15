@@ -1,2 +1,1 @@
-# dnd-homebrew
-Homebrew XML files for dnd 5e
+# D&D 5e Homebrew XML Files
