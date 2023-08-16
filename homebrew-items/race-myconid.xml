@@ -83,6 +83,7 @@
         </sheet>
         <rules>
             <grant type="condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"/>
+            <grant type="Saving Throw" id="ID_PROFICIENCY_SAVINGTHROW_POISON"/>
         </rules>
     </element>
     <element name="Hybrid Nature" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_HYBRID_NATURE">
@@ -95,9 +96,8 @@
     </element>
     <element name="Rapport Spores" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_RAPPORT_SPORES">
         <description>
-            <p>Myconids cannot speak, but you can communicate telepathically with all creatures within 30 ft. of you, provided you and the creature share a language.
-
-                You are not, however, nonverbal; myconids still hum, whistle, and grumble, which forms the verbal components for your spells if you cast them. If you are silenced by an effect, you can still communicate telepathically with your spores, but you cannot use spells with a Verbal component.</p>
+            <p>Myconids cannot speak, but you can communicate telepathically with all creatures within 30 ft. of you, provided you and the creature share a language.</p>
+            <p>You are not, however, nonverbal; myconids still hum, whistle, and grumble, which forms the verbal components for your spells if you cast them. If you are silenced by an effect, you can still communicate telepathically with your spores, but you cannot use spells with a Verbal component.</p>
         </description>
         <sheet>
             <description>Myconids cannot speak, but you can communicate telepathically with all creatures within 30 ft. of you, provided you and the creature share a language.
@@ -125,7 +125,181 @@
 
     <!-- Growth Subrace -->
     <element name="Growth" type="Sub Race" source="GMBinder" id="ID_FUNGALBREWS_GMBINDER_SUBRACE_MYCONID_GROWTH">
-        
+        <supports>Myconid</supports>
+        <description>
+            <p>The oldest and mightiest of the fungal ones, Growth Meld myconids labor in gardens of fungi and construct homes of hollowed puffballs or giant zurkhwood. Gentle giants, they are responsible for protecting delicate and precious myconid sprouts, and are the first line of defense when controlled plants and spore servants are exhausted. Preferring great old-growth forests filled with mists and fog, these myconids are quiet sentinels of their homes hidden by the trunks of ancient trees.</p>
+            <p class="indent"><b><i>Size.</i></b> Towering over most other myconids and other humanoids, your height ranges from 8 to 10 feet tall. Your size is medium.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b> Your Strength score score increases by 1.</p>
+            <p class="indent"><b><i>Mycelial Restoration.</i></b> Whenever you or another creature rolls a 1 on a die roll that restores your hit points, you can reroll the die. You must use the new roll, and can reroll a number of 1s equal to your level.</p>
+            <p class="indent">You can also apply this feature to up to 10 creatures of your choice within 60 feet you when they roll hit dice during a short rest. Once you use this feature on other creatures, you cannot do so again until you complete a long rest.</p>
+            <p class="indent"><b><i>Powerful Build.</i></b> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. If using The Warrior's Codex Reforged, you also count as one one size larger when determining the creatures you can grapple or shove.</p>
+            <p class="indent"><b><i>Language.</i></b> You can read, understand, and write Sylvan. You cannot speak it.</p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d12">7'8"</set>
+        </setters>
+        <rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <stat name="strength" value="1"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID_GROWTH_MYCELIAL_RESTORATION"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID_GROWTH_POEWRFUL_BUILD"/>
+            <grant type="Language" id="ID_LANGUAGE_SLYVAN"/>
+        </rules>
+    </element>
+    <!-- Growth subclass racial traits -->
+    <element name="Mycalial Restoration" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_MYCONID_GROWTH_MYCELIAL_RESTORATION">
+        <description>
+            <p>Whenever you or another creature rolls a 1 on a die roll that restores your hit points, you can reroll the die. You must use the new roll, and can reroll a number of 1s equal to your level.</p>
+            <p>You can also apply this feature to up to 10 creatures of your choice within 60 feet you when they roll hit dice during a short rest. Once you use this feature on other creatures, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Whenever you or another creature rolls a 1 on a die roll that restores your hit points, you can reroll the die. You must use the new roll, and can reroll a number of 1s equal to your level.</p>
+                <p>You can also apply this feature to up to 10 creatures of your choice within 60 feet you when they roll hit dice during a short rest. Once you use this feature on other creatures, you cannot do so again until you complete a long rest.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Powerful Build" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_MYCONID_GROWTH_POWERFUL_BUILD">
+        <description>
+            <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. If using The Warrior's Codex Reforged, you also count as one one size larger when determining the creatures you can grapple or shove.            </p>
+        </description>
+        <sheet>
+            <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. If using The Warrior's Codex Reforged, you also count as one one size larger when determining the creatures you can grapple or shove.            </description>
+        </sheet>
+    </element>
+
+    <!-- Sporemaster Subrace -->
+    <element name="Sporemaster" type="Sub Race" source="GMBinder" id="ID_FUNGALBREWS_GMBINDER_SUBRACE_MYCONID_SPOREMASTER">
+        <supports>Myconid</supports>
+        <description>
+            <p>The wielders of the most powerful spores, Sporemasters are responsible for facilitating melds, vital to myconids' daily life. Intuitive and wise, they serve as some of the most important members of a myconid circle. A sporemaster leaving the circle indicates a great disturbance or terrible tragedy.</p>
+            <p class="indent"><b><i>Size.</i></b>Despite their importance, sporemasters are tiny, sacrificing size for versatility. Your height ranges from 2 to 4 feet, and your size is Small.</p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b>Your Wisdom score score increases by 1.</p>
+            <p class="indent"><b><i>Fungal Alchemy</i></b>Sporemasters have an innate understanding of alchemy, often using their spores as ingredients. You gain proficiency in Alchemists' Supplies.</p>
+            <p class="indent"><b><i>Spores</i></b>As you level up, you gain access to more powerful spores. If your spore's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier. You can use each spore option once, and must complete a long rest before you do so again.</p>
+            <h3>SPOREMASTER PROGRESSION</h3>
+            <table>
+                <thead>
+                    <tr><td>Level</td><td>Spore</td></tr>
+                </thead>
+                <tr><td>1</td><td>Distress</td></tr>
+                <tr><td>3</td><td>Hallucination</td></tr>
+                <tr><td>5</td><td>Pacifying</td></tr>
+            </table>
+            <p class="indent"><b><i>Distress Spores.</i></b> When you take damage, all creatures your choice within 240 feet of you are alerted.</p>
+            <p class="indent"><b><i>Hallucination Spores.</i></b> As an action, you can force a creature within 5 feet of you to make Constitution saving throw. On a failed save, the target is poisoned for 1 minute. While poisoned in this way, it is also incapacitated while it hallucinates. it can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+            <p class="indent"><b><i>Pacyifying Spores.</i></b> As an action, you can force a creature within 5 feet of you to make a Constitution saving throw. On a failed save, the target is stunned for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="height" modifier="2d12">1'8"</set>
+        </setters>
+        <rules>
+            <grant type="Size" id=""/>
+            <stat name="wisdom" value="1"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID_SPOREMASTER_FUNGAL_ALCHEMY"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID_SPOREMASTER_SPORES"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID_SPOREMASTER_DISTRESS_SPORES" level="1" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID_SPOREMASTER_HALLUCINATION_SPORES" level="3" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID_SPOREMASTER_PACIFYING_SPORES" level="5" />
+        </rules>
+    </element>
+    <element name="Fungal Alchemy" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_MYCONID_SPOREMASTER_FUNGAL_ALCHEMY">
+        <description>
+            <p>Sporemasters have an innate understanding of alchemy, often using their spores as ingredients. You gain proficiency in Alchemists' Supplies.</p>
+        </description>
+        <sheet>
+            <description>Sporemasters have an innate understanding of alchemy, often using their spores as ingredients. You gain proficiency in Alchemists' Supplies.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_ALCHEMISTS_TOOLS"/> <!-- NEEDS TO BE CHECKED -->
+        </rules>
+    </element>
+    <element name="" type="Racial Trait" source="GMBinder" id="">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
     </element>
     
+    <!-- Animation Subrace -->
+    <element name="Animation" type="Sub Race" source="GMBinder" id="ID_FUNGALBREWS_GMBINDER_SUBRACE_MYCONID_ANIMATION">
+        <supports>Myconid</supports>
+        <description>
+            <p></p>
+            <p class="indent"><b><i>Size.</i></b></p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b></p>
+            <p class="indent"><b><i></i></b></p>
+            <p class="indent"><b><i></i></b></p>
+            <p class="indent"><b><i></i></b></p>
+        </description>
+        <sheet alt="" display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Size" id=""/>
+            <stat name="" value="1"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID__"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID__"/>
+            <grant type="Language" id="ID_LANGUAGE_"/>
+        </rules>
+    </element>
+    <element name="Pheremone Spores" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_PHEREMONE_SPORES">
+        <description>
+            <p>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Pheremone Spores" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_PHEREMONE_SPORES">
+        <description>
+            <p>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</description>
+        </sheet>
+    </element>
+
+    <!-- Compost Subrace -->
+    <element name="Compost" type="Sub Race" source="GMBinder" id="ID_FUNGALBREWS_GMBINDER_SUBRACE_MYCONID_COMPOST">
+        <supports>Myconid</supports>
+        <description>
+            <p></p>
+            <p class="indent"><b><i>Size.</i></b></p>
+            <p class="indent"><b><i>Ability Score Increase.</i></b></p>
+            <p class="indent"><b><i></i></b></p>
+            <p class="indent"><b><i></i></b></p>
+            <p class="indent"><b><i></i></b></p>
+        </description>
+        <sheet alt="" display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Size" id=""/>
+            <stat name="" value="1"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID__"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MYCONID__"/>
+            <grant type="Language" id="ID_LANGUAGE_"/>
+        </rules>
+    </element>
+    <element name="Pheremone Spores" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_PHEREMONE_SPORES">
+        <description>
+            <p>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Pheremone Spores" type="Racial Trait" source="GMBinder" id="ID_RACIAL_TRAIT_PHEREMONE_SPORES">
+        <description>
+            <p>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Myconid sprouts learn to bathe threats in scented spores on sight so older and stronger members of the circle can track and destroy them. You can use a bonus action to cover one creature that you can see within 60 feet of you with those spores. For 1 minute, you and all other myconids and spore servants have advantage on attack rolls against that creature. You can fire those spores a number of times equal to your Constitution modifier (a minimum of once) and regain all expended uses when you complete a long rest.</description>
+        </sheet>
+    </element>
 </elements>
